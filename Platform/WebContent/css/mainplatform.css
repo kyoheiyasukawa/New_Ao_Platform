@@ -1,0 +1,415 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+a[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+.header{
+	position: absolute;
+	top: calc(10% - 35px);
+	left: calc(100% - 300px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+body {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+    background-image: url("mountain.jpg");
+
+	background-size: cover;
+	-webkit-filter: blur(px);
+	z-index: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 3em;
+	left: 50%;
+	margin: -1.5em 0 0 -6em;
+	position: absolute;
+	top: 50%;
+	width: 12em;
+}
+
+/* ---------- SOCIAL ---------- */
+
+.social {
+	position: relative;
+	height: 3em;
+	width: 13.5em;
+}
+
+.social li {
+	display: block;
+	height: 4em;
+	line-height: 4em;
+	margin: -2.2em;
+	position: absolute;
+	-webkit-transition: -webkit-transform .6s;
+	-moz-transition: -moz-transform .6s;
+	-ms-transition: -ms-transform .6s;
+	-o-transition: -o-transform .6s;
+	transition: transform .6s;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	text-align: center;
+	width: 4em;
+}
+
+.social a {
+	color: #fffdf0;
+	display: block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 4em;
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(45deg);
+	-moz-transform: scale(1.3,1.3) rotate(45deg);
+  -ms-transform: scale(1.3,1.3) rotate(45deg);
+	-o-transform: scale(1.3,1.3) rotate(45deg);
+  transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook  {
+	background: #43197a;
+	left: 0;
+	top: 0%;
+}
+
+.twitter{
+	background: #1a9ec4;
+	bottom: 0;
+	left: 25%;
+
+}
+
+.dribbble {
+	background: #f39110;
+	left: 50%;
+	top: 0%;
+}
+
+.behance {
+	background: #24b82c;
+	bottom: 0;
+	left: 75%;
+}
+
+.linked-in{
+	background: #9d1515;
+	left: 100%;
+	top: 0%;
+}
+
+/*真ん中アイコンの押したときの色*/
+ a:hover
+ {
+   color: rgb(18, 70, 240);
+ }
+
+
+
+ /*---------------------------------------------------------------------------*/
+/*MENU ICON TOP LEFT　メニューアイコン左上の記述*/
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+
+   z-index: 1;
+
+   -webkit-user-select: none;
+   user-select: none;
+ }
+
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+
+   cursor: pointer;
+
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+
+   -webkit-touch-callout: none;
+ }
+
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+
+   background: #cdcdcd;
+   border-radius: 3px;
+
+   z-index: 1;
+
+   transform-origin: 4px 0px;
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			   opacity 0.55s ease;
+ }
+
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+
+ /*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*---------------------------------------------------------------------------*/
+/*FLYING BIRD 飛んでいる鳥*/
+@-webkit-keyframes flap-r {
+	0%,10%   { 	border-top-width: 60px; }
+	40%,60%  { 	border-top-width: 10px; }
+	100%     { 	border-top-width: 60px; }
+  }
+
+  @-webkit-keyframes flap-l {
+	0%       { 	border-bottom-width: 0px; }
+	40%,60%  { 	border-bottom-width: 40px; }
+	100%     { 	border-bottom-width: 0px; }
+  }
+
+  @-webkit-keyframes fly {
+	0%   { 	left: 0%; top:100px;-webkit-transform:scale3d(0.5,0.5,1) }
+	100% { 	left: 100%; top:100px; -webkit-transform:scale3d(1,1,1) }
+  }
+
+  @-webkit-keyframes bob {
+	0%   { 	top: 25px; }
+	50%   { 	top: 0px; }
+	100% { 	top: 25px; }
+  }
+
+  #pictureframe {
+	position:relative;
+	width:120px;
+	margin-top:120px;
+	margin-left:5px;
+	-webkit-animation: fly 15.5s infinite linear;
+  }
+
+  #shadow {
+	position:absolute;
+	width: 0px; height: 0px;
+	top: 140px; left: 00px;
+	border-width: 10px;
+	border-left-width:50px;
+	border-top-width:0px;
+	border-right-width: 40px;
+	border-color: transparent;
+	border-bottom-color: rgba(210,210,210,0.6);
+	border-style:solid;
+	-webkit-filter: blur(5px);
+  }
+
+  #shadow:after {
+	content: " ";
+	position:absolute;
+	width: 00px; height: 0px;
+	top: 10px; left: -50px;
+	border-width: 10px;
+	border-left-width:50px;
+	border-bottom-width:0px;
+	border-right-width: 40px;
+	border-color: transparent;
+	border-top-color: rgba(210,210,210,0.6);
+	border-style:solid;
+  }
+
+  #bird div {
+	position:absolute;
+  }
+
+  #bird {
+	position:absolute;
+	-webkit-animation: bob 0.7s infinite cubic-bezier(0.7, 0.7, 0.1, 0.4);
+   }
+
+
+  #body1,#body2,#wing-l,#wing-r {
+		width: 0px; height: 0px;
+	  border-color: transparent;
+	  border-style: solid;
+  }
+  #body1 {
+	  border-width: 15px;
+	border-left-width:25px;
+	border-top-width:15px;
+	border-right-width: 55px;
+	border-top-color: rgb(173, 187, 47);
+  }
+
+  #body2 {
+	left: 50px; bottom: 0px;
+	  border-width: 10px;
+	border-left-width:5px;
+	border-top-width:0px;
+	border-right-width: 15px;
+	border-bottom-color: rgb(150, 211, 9);
+  }
+
+  #wing-l {
+	left: 22px; bottom: 0px;
+	  border-width: 60px;
+	border-left-width:20px;
+	border-top-width:0px;
+	border-right-width: 6px;
+	border-bottom-color: rgb(206, 209, 22);
+	-webkit-animation: flap-l 0.7s infinite;
+  }
+
+  #wing-r {
+	left: 22px; top:0px;
+	  border-width: 60px;
+	border-left-width:20px;
+	border-bottom-width:0px;
+	border-right-width: 6px;
+	border-top-color: rgb(159, 189, 26);
+	-webkit-animation: flap-r 0.7s infinite;
+  }
+
+
+  #caption a {
+	position:absolute;
+	font-family: courier;
+	left:1px; bottom:10px;
+	color: rgb(15, 167, 35);
+  }
