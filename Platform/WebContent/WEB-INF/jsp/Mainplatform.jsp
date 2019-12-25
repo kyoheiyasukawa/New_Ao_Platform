@@ -5,9 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>AOPLATFORM MAIN PAGE</title>
-<link rel="stylesheet" href="/Platform/css/mainplatform.css">
-<script src="sample.js">
-</script>
+<link rel="stylesheet" href="http://localhost:8080/Platform/css/mainplatform.css">
 </head>
 <body>
 
@@ -44,6 +42,14 @@
         </a>
         <a href="https://www.spacex.com/">
           <li>エンディング</li>
+          
+        <a href="http://localhost:8080\Platform\WebContent\WEB-INF\jsp\Registration.jsp" method="button">
+        <li>ユーザー登録</li>
+        </a>
+        <a href="C:\Users\yasukawa\eclipse-workspace\Platform\src\servlet\RegisterServlet.java" method = "">
+        <li>ユーザー削除</li>
+        </a>
+          
         </a>
       </ul>
     </div>
@@ -65,22 +71,7 @@
       </li>
 
     </ul>
-
-
-    <!--/*---------------------------------------------------------------------------*/
-    /*FLYING BIRD 飛んでいる鳥*/ -->
-    <div id="pictureframe">
-      <div id="bird">
-        <div id="body2"></div>
-        <div id="body1"></div>
-        <div id="wing-l"></div>
-        <div id="wing-r"></div>
-      </div>
-      <div id="shadow"></div>
-    </div>
-
-
-
+  
 
 </body>
 

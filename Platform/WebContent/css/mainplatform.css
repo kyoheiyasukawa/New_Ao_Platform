@@ -7,6 +7,9 @@ a[class*="entypo-"]:before {
 	font-family: 'entypo', sans-serif;
 }
 
+
+
+
 /* ---------- GENERAL ---------- */
 .header{
 	position: absolute;
@@ -35,7 +38,7 @@ body {
 	bottom: -40px;
 	width: auto;
 	height: auto;
-    background-image: url("mountain.jpg");
+    background-image: url("/Platform/img/miti.jpg");
 
 	background-size: cover;
 	-webkit-filter: blur(px);
@@ -142,7 +145,7 @@ ul {
 	top: 0%;
 }
 
-/*真ん中アイコンの押したときの色*/
+/*逵溘ｓ荳ｭ繧｢繧､繧ｳ繝ｳ縺ｮ謚ｼ縺励◆縺ｨ縺阪�ｮ濶ｲ*/
  a:hover
  {
    color: rgb(18, 70, 240);
@@ -151,7 +154,7 @@ ul {
 
 
  /*---------------------------------------------------------------------------*/
-/*MENU ICON TOP LEFT　メニューアイコン左上の記述*/
+/*MENU ICON TOP LEFT縲�繝｡繝九Η繝ｼ繧｢繧､繧ｳ繝ｳ蟾ｦ荳翫�ｮ險倩ｿｰ*/
  #menuToggle
  {
    display: block;
@@ -289,127 +292,3 @@ ul {
 
 
 
-
-
-
-
- /*---------------------------------------------------------------------------*/
-/*FLYING BIRD 飛んでいる鳥*/
-@-webkit-keyframes flap-r {
-	0%,10%   { 	border-top-width: 60px; }
-	40%,60%  { 	border-top-width: 10px; }
-	100%     { 	border-top-width: 60px; }
-  }
-
-  @-webkit-keyframes flap-l {
-	0%       { 	border-bottom-width: 0px; }
-	40%,60%  { 	border-bottom-width: 40px; }
-	100%     { 	border-bottom-width: 0px; }
-  }
-
-  @-webkit-keyframes fly {
-	0%   { 	left: 0%; top:100px;-webkit-transform:scale3d(0.5,0.5,1) }
-	100% { 	left: 100%; top:100px; -webkit-transform:scale3d(1,1,1) }
-  }
-
-  @-webkit-keyframes bob {
-	0%   { 	top: 25px; }
-	50%   { 	top: 0px; }
-	100% { 	top: 25px; }
-  }
-
-  #pictureframe {
-	position:relative;
-	width:120px;
-	margin-top:120px;
-	margin-left:5px;
-	-webkit-animation: fly 15.5s infinite linear;
-  }
-
-  #shadow {
-	position:absolute;
-	width: 0px; height: 0px;
-	top: 140px; left: 00px;
-	border-width: 10px;
-	border-left-width:50px;
-	border-top-width:0px;
-	border-right-width: 40px;
-	border-color: transparent;
-	border-bottom-color: rgba(210,210,210,0.6);
-	border-style:solid;
-	-webkit-filter: blur(5px);
-  }
-
-  #shadow:after {
-	content: " ";
-	position:absolute;
-	width: 00px; height: 0px;
-	top: 10px; left: -50px;
-	border-width: 10px;
-	border-left-width:50px;
-	border-bottom-width:0px;
-	border-right-width: 40px;
-	border-color: transparent;
-	border-top-color: rgba(210,210,210,0.6);
-	border-style:solid;
-  }
-
-  #bird div {
-	position:absolute;
-  }
-
-  #bird {
-	position:absolute;
-	-webkit-animation: bob 0.7s infinite cubic-bezier(0.7, 0.7, 0.1, 0.4);
-   }
-
-
-  #body1,#body2,#wing-l,#wing-r {
-		width: 0px; height: 0px;
-	  border-color: transparent;
-	  border-style: solid;
-  }
-  #body1 {
-	  border-width: 15px;
-	border-left-width:25px;
-	border-top-width:15px;
-	border-right-width: 55px;
-	border-top-color: rgb(173, 187, 47);
-  }
-
-  #body2 {
-	left: 50px; bottom: 0px;
-	  border-width: 10px;
-	border-left-width:5px;
-	border-top-width:0px;
-	border-right-width: 15px;
-	border-bottom-color: rgb(150, 211, 9);
-  }
-
-  #wing-l {
-	left: 22px; bottom: 0px;
-	  border-width: 60px;
-	border-left-width:20px;
-	border-top-width:0px;
-	border-right-width: 6px;
-	border-bottom-color: rgb(206, 209, 22);
-	-webkit-animation: flap-l 0.7s infinite;
-  }
-
-  #wing-r {
-	left: 22px; top:0px;
-	  border-width: 60px;
-	border-left-width:20px;
-	border-bottom-width:0px;
-	border-right-width: 6px;
-	border-top-color: rgb(159, 189, 26);
-	-webkit-animation: flap-r 0.7s infinite;
-  }
-
-
-  #caption a {
-	position:absolute;
-	font-family: courier;
-	left:1px; bottom:10px;
-	color: rgb(15, 167, 35);
-  }

@@ -23,4 +23,10 @@ public class User implements Serializable{
 	public String Pass() {
 		return pass;
 	}
+	public String getName() {
+		return name;
+	}
+	public String getPass() {
+		return pass;
+	}
 }

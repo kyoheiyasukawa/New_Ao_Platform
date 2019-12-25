@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+
+
+.cp_iptxt {
+	position: relative;
+	width: 90%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
+.cp_iptxt input[type=submit] {
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid#1b2538;
+    ;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .box {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
